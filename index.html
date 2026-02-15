@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedStar Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+
+    <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <header class="navbar">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><img src="image/logo (1).png" alt="MedStar"></a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="toggle-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <div class="container">
+                <h1>We Provide <span>Medical</span> Services You Can <span>Trust</span></h1>
+                <p>Need professional help? Our staff is ready to answer your questions. Visit us or make an appointment today.</p>
+                <div class="btns-wrapper">
+                    <a href="#contact" class="btn btn-primary">Get Appointment</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Who We Are</h3>
+                    <p>We take healthcare personally at <strong>MedStar Hospital</strong>. We are dedicated to providing the best care to meet the needs of our patients with dignity and respect.</p>
+                    <div class="list">
+                        <div><i class="fas fa-check-circle"></i> Modern Equipment</div>
+                        <div><i class="fas fa-check-circle"></i> Expert Doctors</div>
+                        <div><i class="fas fa-check-circle"></i> 24/7 Emergency</div>
+                        <div><i class="fas fa-check-circle"></i> Affordable Prices</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="image/about-img.jpeg" alt="About MedStar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-info"><i class="fa-solid fa-user-doctor"></i><span>234</span><p>Doctors</p></div>
+                <div class="col-info"><i class="fa-solid fa-bed"></i><span>2468</span><p>Rooms</p></div>
+                <div class="col-info"><i class="fa-solid fa-smile"></i><span>5000+</span><p>Happy Patients</p></div>
+                <div class="col-info"><i class="fa-solid fa-award"></i><span>34</span><p>Years Experience</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="title">
+                <h2>Professional Medical Services</h2>
+                <p>Providing top-notch healthcare services for you and your family.</p>
+            </div>
+            <div class="row">
+                <div class="card"><i class="fas fa-truck-medical"></i><h3>Emergency Help</h3><p>Fast response for critical situations.</p></div>
+                <div class="card"><i class="fas fa-heart-pulse"></i><h3>Heart Care</h3><p>Specialized cardiac treatments.</p></div>
+                <div class="card"><i class="fas fa-stethoscope"></i><h3>Free Checkup</h3><p>Regular health assessments for everyone.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="title"><h2>Book An Appointment</h2></div>
+            <div class="row">
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="dept" required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option>Dental</option>
+                            <option>Surgery</option>
+                            <option>Lab</option>
+                        </select>
+                        <input type="date" name="date" required>
+                    </div>
+                    <textarea name="message" placeholder="Message or medical history..."></textarea>
+                    <button type="submit" class="btn btn-primary">Confirm Appointment</button>
+                </form>
+                <div class="contact-img">
+                    <img src="image/contact.jpg" alt="Contact Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="f-col"><h2>About Us</h2><p>MedStar provides world-class healthcare with a human touch.</p></div>
+                <div class="f-col"><h2>Links</h2><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li></ul></div>
+                <div class="f-col"><h2>Hours</h2><p>Mon-Thu: 8:00 - 20:00<br>Fri: 9:00 - 15:00</p></div>
+            </div>
+            <div class="copy"><p>&copy; 2024 MedStar Hospital | All Rights Reserved</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html
